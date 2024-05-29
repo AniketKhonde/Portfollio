@@ -1,0 +1,34 @@
+[
+  {
+    "title": "MoviTv Web App",
+    "imageSrc": "projects/movitv.jpg",
+    "description": "Movitv is a responsive web app that displays trending movies, allows users to search for TV series and movies, and features login/register and bookmarking functionalities.",
+    "skills": ["React.js","Tailwind CSS", "Express.js", "Node.js"," MongoDB","RESTfull API"],
+    "demo": "https://movi-tv-frontend.vercel.app/",
+    "source": "https://github.com/AniketKhonde/MoviTV-frontend"
+  },
+  {
+    "title": "ShopNest Ecommerse site",
+    "imageSrc": "projects/ecommerse.jpg",
+    "description": "It is an ecommerce website shows a variety of products like electronics, sports, Groceries, etc. Users can login and add to cart, make orders , manage profiles.",
+    "skills": ["React","Material-UI", "Express","CRUD","MongoDB","RESTfull API"],
+    "demo": "https://shop-nest-frontend1.vercel.app/",
+    "source": "https://github.com/AniketKhonde/ShopNest_frontend1"
+  },
+  {
+    "title": "QuizeMaker",
+    "imageSrc": "projects/quizemaker.png",
+    "description": "This is a project use to create quizzes, store them in local storage and solve. It is interactive web site that simplifies the work of creating quizzes online.",
+    "skills": ["React.js", "Responsive Web design","frontent", "Tailwind CSS", "Local Storage"],
+    "demo": "https://quiz-maker-peach.vercel.app/",
+    "source": "https://github.com/AniketKhonde/QuizMaker"
+  },
+  {
+    "title": "Weather App",
+    "imageSrc": "projects/weather.jpg",
+    "description": "This is simple weather application shows weather data on searching location, it fetches user location and render weather data  on load it user weather API to fetch weather data.",
+    "skills": ["React", "Weather API", "CSS"],
+    "demo": "https://weather-app-chi-snowy-94.vercel.app/",
+    "source": "https://github.com/AniketKhonde/WeatherApp"
+  }
+]

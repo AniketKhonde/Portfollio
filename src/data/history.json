@@ -1,0 +1,27 @@
+[
+  {
+    "role": "Solved 100+ DSA questions",
+    "organisation": "leetcode",
+    "startDate": "",
+    "endDate": "",
+    "experiences": [],
+    "imageSrc": "history/leetcode.png"
+  },
+  {
+    "role": " 5 star in Problem Solving",
+    "organisation": "Hackerrank",
+    "startDate": "",
+    "endDate": "",
+    "experiences": [],
+    "imageSrc": "history/hacker.png"
+  },
+  {
+    "role": "Participated in Smart India Hackathon",
+    "organisation": "2019",
+    "startDate": "",
+    "endDate": "",
+    "experiences": [
+    ],
+    "imageSrc": "history/smih.jpg"
+  }
+]

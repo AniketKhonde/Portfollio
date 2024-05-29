@@ -1,0 +1,98 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 120px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 58px 10%;
+  gap: 10px;
+}
+
+.text h2 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.text p {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 26px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    align-items: center;
+  }
+  .container {
+    flex-direction: column;
+    padding: 40px 10%; /* Adjust padding for smaller screens */
+    gap: 23px;
+    align-items: center; /* Center items vertically */
+  }
+
+  .text {
+    text-align: center; /* Center text */
+  }
+
+  .text h2 {
+    font-size: 60px; /* Decrease font size for smaller screens */
+    letter-spacing: 2px; /* Decrease letter spacing for smaller screens */
+  }
+
+  .text p {
+    font-size: 30px; /* Decrease font size for smaller screens */
+    letter-spacing: 1px; /* Decrease letter spacing for smaller screens */
+  }
+
+  .links {
+    align-items: center; /* Center links horizontally */
+    text-align: center; /* Center link text */
+  }
+
+  .link {
+    gap: 15px; /* Decrease gap between link elements */
+  }
+
+  .link a {
+    font-size: 25px; /* Decrease font size for smaller screens */
+    letter-spacing: 0.5px; /* Decrease letter spacing for smaller screens */
+  }
+}
