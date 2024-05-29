@@ -9,9 +9,9 @@ export const Hero = () => {
     setModalOpen(!isModalOpen);
   };
 
-  const resume = ()=>{
-    
-  }
+  const resume = () => {
+    window.open('https://drive.google.com/file/d/1EmQw3vhimDvFZ_KQcgqyR2-bKHy6cioo/view?usp=sharing', '_blank');
+  };
 
   return (
     <section className={styles.container}>
