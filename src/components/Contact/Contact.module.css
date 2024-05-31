@@ -63,7 +63,7 @@
   }
   .container {
     flex-direction: column;
-    padding: 40px 10%; /* Adjust padding for smaller screens */
+    padding: 10px 5%; /* Adjust padding for smaller screens */
     gap: 23px;
     align-items: center; /* Center items vertically */
   }
@@ -73,12 +73,12 @@
   }
 
   .text h2 {
-    font-size: 60px; /* Decrease font size for smaller screens */
+    font-size: 50px; /* Decrease font size for smaller screens */
     letter-spacing: 2px; /* Decrease letter spacing for smaller screens */
   }
 
   .text p {
-    font-size: 30px; /* Decrease font size for smaller screens */
+    font-size: 20px; /* Decrease font size for smaller screens */
     letter-spacing: 1px; /* Decrease letter spacing for smaller screens */
   }
 
@@ -92,7 +92,7 @@
   }
 
   .link a {
-    font-size: 25px; /* Decrease font size for smaller screens */
+    font-size: 18px; /* Decrease font size for smaller screens */
     letter-spacing: 0.5px; /* Decrease letter spacing for smaller screens */
   }
 }

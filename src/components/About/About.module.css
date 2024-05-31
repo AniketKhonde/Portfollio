@@ -91,7 +91,7 @@
   }
   .container {
     background-color: transparent;
-    padding: 20px; /* Adjust padding for smaller screens */
+    padding: 2px; /* Adjust padding for smaller screens */
     margin-top: 50px; /* Adjust margin for smaller screens */
   }
 

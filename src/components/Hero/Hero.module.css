@@ -156,17 +156,20 @@
     align-items: center;
   }
   .title {
-    font-size: 36px;
+    font-size: 33px;
     margin-bottom: 15px;
   }
 
   .description {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 25px;
   }
 
   .contactBtn {
     font-size: 16px;
     padding: 10px 16px;
+  }
+  .skillsSection{
+    display: none;
   }
 }
