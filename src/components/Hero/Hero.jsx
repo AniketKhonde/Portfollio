@@ -10,7 +10,7 @@ export const Hero = () => {
   };
 
   const resume = () => {
-    window.open('https://drive.google.com/file/d/1WtQ5VV7Obn4VqtMfICaXQZYda1pcVVTW/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1nLtXfuXuVvXUFejc7LBInj83V-mqP9e-/view?usp=sharing', '_blank');
   };
 
   return (
