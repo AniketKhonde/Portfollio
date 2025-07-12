@@ -1,0 +1,401 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0d0d0d 100%);
+  border-radius: 20px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  min-height: 100vh;
+  overflow: hidden;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.starBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #00ffff;
+  border-radius: 50%;
+  animation: twinkle 3s infinite ease-in-out;
+  box-shadow: 0 0 4px #00ffff, 0 0 8px #00ffff;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.titleGlow {
+  background: linear-gradient(45deg, #00ffff, #ffffff, #00ffff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 50px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.workContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.workImage {
+  width: 30%;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.workImage:hover {
+  transform: scale(1.05);
+  border-color: rgba(0, 255, 255, 0.6);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+}
+
+.workItems {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.workItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 0.8s ease forwards;
+}
+
+.workItem:hover {
+  transform: translateX(10px);
+  border-color: rgba(0, 255, 255, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.2);
+  background: rgba(0, 255, 255, 0.05);
+}
+
+.workIcon {
+  flex-shrink: 0;
+}
+
+.iconContainer {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.workItem:hover .iconContainer {
+  background: rgba(0, 255, 255, 0.2);
+  border-color: rgba(0, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+.iconText {
+  font-size: 24px;
+  z-index: 2;
+  position: relative;
+}
+
+.iconGlow {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #00ff00);
+  background-size: 400% 400%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: gradientShift 3s ease infinite;
+  z-index: 1;
+}
+
+.workItem:hover .iconGlow {
+  opacity: 0.3;
+}
+
+.workItemText {
+  flex: 1;
+}
+
+.jobTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #00ffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.workItem:hover .jobTitle {
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.period {
+  font-size: 16px;
+  color: #00ffff;
+  font-style: italic;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.experiences {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experienceItem {
+  color: #cccccc;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.experienceItem::before {
+  content: "▸";
+  color: #00ffff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.experienceItem:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.experienceItem:hover::before {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+  .workContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .workImage {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .workContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .workImage {
+    display: none;
+  }
+
+  .workItems {
+    margin-top: 29px;
+  }
+
+  .workItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .container {
+    background: transparent;
+    padding: 2px;
+    margin-top: 50px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .workContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .workImage {
+    display: none;
+  }
+
+  .workItems {
+    gap: 20px;
+  }
+
+  .workItem {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .jobTitle {
+    font-size: 20px;
+  }
+
+  .period {
+    font-size: 14px;
+  }
+
+  .experienceItem {
+    font-size: 14px;
+  }
+  
+  .star {
+    width: 1px;
+    height: 1px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+  }
+  
+  .workItem {
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  .iconContainer {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .iconText {
+    font-size: 20px;
+  }
+  
+  .jobTitle {
+    font-size: 18px;
+  }
+  
+  .period {
+    font-size: 13px;
+  }
+  
+  .experienceItem {
+    font-size: 13px;
+  }
+} 

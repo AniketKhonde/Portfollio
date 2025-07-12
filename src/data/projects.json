@@ -8,12 +8,12 @@
     "source": "https://github.com/AniketKhonde/MoviTV-frontend"
   },
   {
-    "title": "ShopNest Ecommerse site",
-    "imageSrc": "projects/ecommerse.jpg",
-    "description": "It is an ecommerce website shows a variety of products like electronics, sports, Groceries, etc. Users can login and add to cart, make orders , manage profiles.",
-    "skills": ["React","Material-UI", "Express","CRUD","MongoDB","RESTfull API"],
-    "demo": "https://shop-nest-frontend1.vercel.app/",
-    "source": "https://github.com/AniketKhonde/ShopNest_frontend1"
+    "title": "Knovator Job Importer",
+    "imageSrc": "projects/importer.jpg",
+    "description": "Automated job import system that fetches and processes job listings from multiple XML feed APIs. Features real-time dashboard monitoring, queue-based processing with BullMQ, filtering.",
+    "skills": ["Next.js","MongoDB","Redis","BullMQ","Socket.IO","Tailwind CSS"],
+    "demo": "https://knovator-assignment.vercel.app/",
+    "source": "https://github.com/AniketKhonde/Knovator-Assignment"
   },
   {
     "title": "QuizeMaker",
